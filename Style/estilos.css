@@ -169,6 +169,14 @@ p{
   align-items: center;
 }
 
+.content-izq{
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
 .content2{
   height: 250vh;
   display: flex;
@@ -461,6 +469,8 @@ p{
 .header-img img{
   width: 100px;
 }
+
+
   
 }
   
