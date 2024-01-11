@@ -171,11 +171,20 @@ p{
 }
 
 .content-noticias{
-  height: 80vh;
+  
+  
+
+  top: 350px; /* Ajusta esto a la posición que prefieras */
+  left: 100px; /* Ajusta esto a la posición que prefieras */
+  width: 1100px; /* Ajusta esto al ancho que prefieras */
+  height: 1300px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute; /* z-index solo funciona en elementos posicionados */
+  z-index: 1; /* Ajusta esto al valor que necesites */
 }
 
 .content-radio{
@@ -188,6 +197,15 @@ p{
 
 .content-video-principal{
   height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-redes{
+  margin-top: 3000px;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,6 +241,10 @@ p{
   background: #ffff;
 }
 
+.sau-hoja{
+  padding: 50px;
+
+}
 
 
 .box-container{
@@ -388,6 +410,7 @@ p{
   margin: 0 auto;
   max-width: 45px;
 }
+
 .item {
   flex: 10 0 200px;
   margin: 10px;
@@ -605,3 +628,27 @@ p{
   .modulo-accesos-rapidos p {
     margin-top: 10px;
   }
+
+
+  /*imagen fondo*/
+  .img-fondo-secundarias {
+    position: relative;
+  }
+  .img-fondo-secundarias img{
+    width: 100%; /* Ajusta esto al ancho que prefieras */
+    height: 45%; /* Ajusta esto a la altura que prefieras */
+    object-fit: cover; /* La imagen se redimensionará para cubrir tanto el ancho como la altura del contenedor, manteniendo sus proporciones */
+  }
+
+  .hoja {
+    position: absolute; /* Esto posiciona el recuadro en relación al contenedor .img-fondo-secundarias */
+    top: 150px; /* Ajusta esto a la posición que prefieras */
+    left: 100px; /* Ajusta esto a la posición que prefieras */
+    width: 1100px; /* Ajusta esto al ancho que prefieras */
+    height: 1300px; /* Ajusta esto a la altura que prefieras */
+    background-color: rgb(255, 255, 255); /* Esto crea un fondo blanco semi-transparente */
+    overflow-y: auto; /* Esto permite el desplazamiento vertical si el contenido supera la altura del recuadro */
+    padding: 10px;
+  }
+
+  
