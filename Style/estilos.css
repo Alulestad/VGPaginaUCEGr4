@@ -642,13 +642,46 @@ p{
 
   .hoja {
     position: absolute; /* Esto posiciona el recuadro en relación al contenedor .img-fondo-secundarias */
-    top: 150px; /* Ajusta esto a la posición que prefieras */
+    top: 250px; /* Ajusta esto a la posición que prefieras */
     left: 100px; /* Ajusta esto a la posición que prefieras */
     width: 1100px; /* Ajusta esto al ancho que prefieras */
-    height: 1300px; /* Ajusta esto a la altura que prefieras */
+    height: 2000px; /* Ajusta esto a la altura que prefieras */
     background-color: rgb(255, 255, 255); /* Esto crea un fondo blanco semi-transparente */
     overflow-y: auto; /* Esto permite el desplazamiento vertical si el contenido supera la altura del recuadro */
     padding: 10px;
   }
 
+  /*INDICE*/
+  .indice {
+    position: fixed absolute; /* Esto hace que la barra de índice se mantenga en su lugar incluso cuando se desplaza la página */
+    left: 0;
+    top: 0;
+    width: 200px; /* Ajusta esto al ancho que prefieras */
+    height: 100%;
+    background-color: #f8f8f8; /* Ajusta esto al color que prefieras */
+    padding: 20px;
+    overflow-y: auto; /* Esto permite el desplazamiento vertical si el índice es más largo que la altura de la ventana */
+  }
   
+  .indice ul {
+    list-style-type: none; /* Esto elimina los puntos de la lista */
+    padding: 0;
+  }
+  
+  .indice li a {
+    text-decoration: none; /* Esto elimina el subrayado de los enlaces */
+    color: #000000; /* Ajusta esto al color que prefieras */
+  }
+
+  .contenido-interno {
+    position: absolute;
+    left: 0;
+    top: 900px;
+    margin-left: 220px; /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
+    padding: 20px;
+  }
+
+  
+
+
+
