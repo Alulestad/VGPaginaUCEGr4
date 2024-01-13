@@ -187,6 +187,20 @@ p{
   z-index: 1; /* Ajusta esto al valor que necesites */
 }
 
+.content-noticias-pricipal{
+  
+  top: 250px; /* Ajusta esto a la posición que prefieras */
+  left: 100px; /* Ajusta esto a la posición que prefieras */
+  width: 1300px; /* Ajusta esto al ancho que prefieras */
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
 .content-radio{
   height: 25vh;
   display: flex;
@@ -246,8 +260,7 @@ p{
 
 }
 
-
-.box-container{
+.box-container-servicios{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -256,13 +269,33 @@ p{
 }
 .box-container .box{
   
-  height: 255px;
+  height: 355px;
   width: 270px;
-  background: #00000000 ;/* #0076BD;*/
+  background: #fffefe00 ;/* #0076BD;*/
   
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
   margin: 10px;
 }
+
+.box-container-servicios .box{
+  
+  height: 355px;
+  width: 270px;
+  background: #fffefe00 ;/* #0076BD;*/
+  
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  margin: 10px;
+}
+
+
+.box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: flex-start;
+}
+
 .box-container .box p{
   margin-top: 10px;
   margin-right: 5px;
@@ -660,6 +693,7 @@ p{
     height: 100%;
     background-color: #f8f8f8; /* Ajusta esto al color que prefieras */
     padding: 20px;
+    text-align: left;
     overflow-y: auto; /* Esto permite el desplazamiento vertical si el índice es más largo que la altura de la ventana */
   }
   
