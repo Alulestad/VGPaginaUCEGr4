@@ -832,7 +832,8 @@ p {
 .indice li a {
   text-decoration: underline;
   /* Esto elimina el subrayado de los enlaces */
-  color: #000000;
+  
+  color: #0076BD;
   /* Ajusta esto al color que prefieras */
   
 }
