@@ -8,7 +8,8 @@
   vertical-align: baseline;
   list-style: none;
 }
-body{
+
+body {
   text-align: center;
   font-family: sans-serif;
   background-color: #fbf9f9;
@@ -16,140 +17,151 @@ body{
 
 }
 
-.head{
+.head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  background-color:  #000000c7;
+  background-color: #000000c7;
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 
 /* Navbar container */
-.logo{
+.logo {
   color: #f4f4fb;
   padding: 0 25px;
   text-transform: uppercase;
-  font-weight: 800;
+  
+  /*font-weight: 800;*/
+
+
 }
+
 .navbar {
-    overflow: hidden;
-    /*background-color:  #0000001e;*/
-    font-family: 'Helvetica Neue', sans-serif;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-    font-size: 16px;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: rgb(248, 243, 243);
-    padding: 12px 5px;
-    background-color: inherit;
-    font: inherit; /* Important for vertical align on mobile phones */
-    margin: 0px; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    color:  #AD9218;
-    font-size: 20px;
-
-  }
-  
-  /* Dropdown content (hidden by default) la caja */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(245, 245, 245,0.7);
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-top: 16px;
-  }
-  
-  /* Mega Menu header, if needed */
-  .dropdown-content .header {
-    background: #0076bd;
-    padding: 10px;
-    color: rgb(245, 250, 250);
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width:25%;
-    padding: 10px;
-    background-color: rgba(245, 245, 245, 0.2);
-    height: 250px;
-  }
-
-  .column h3{
-    font-size: 15px;
-    color:  #084771;  
-  }
-  
-  /* Style links inside the columns */
-  .column a {
-    float: none;
-    color: rgb(7, 7, 7);
-    padding: 8px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a background color on hover */
-  .column a:hover {
-    background-color:  #084771;
-    font-size: 17px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .title{
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #0b0b0a;
+  overflow: hidden;
+  /*background-color:  #0000001e;*/
+  font-family: 'Helvetica Neue', sans-serif;
 }
-p{
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: rgb(248, 243, 243);
+  padding: 12px 5px;
+  background-color: inherit;
+  font: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0px;
+  /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: #AD9218;
+  font-size: 20px;
+
+}
+
+/* Dropdown content (hidden by default) la caja */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(245, 245, 245, 0.7);
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 16px;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+  background: #0076bd;
+  padding: 10px;
+  color: rgb(245, 250, 250);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: rgba(245, 245, 245, 0.2);
+  height: 250px;
+}
+
+.column h3 {
+  font-size: 15px;
+  color: #084771;
+}
+
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: rgb(7, 7, 7);
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+  background-color: #084771;
+  font-size: 17px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  
+  /*font-weight: 300;*/
+  text-transform: uppercase;
+  color: #0b0b0a;
+}
+
+p {
   margin-bottom: 40px;
   font-size: 15px;
   color: #fff;
   padding: 0 150px;
 
 }
-.btn{
+
+.btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 40px;
@@ -158,11 +170,13 @@ p{
   text-decoration: none;
   background: #009036;
 }
-.btn:hover{
+
+.btn:hover {
   background: none;
 
 }
-.content{
+
+.content {
   height: 98vh;
   display: flex;
   flex-direction: column;
@@ -170,38 +184,46 @@ p{
   align-items: center;
 }
 
-.content-noticias{
-  
-  
+.content-noticias {
 
-  top: 350px; /* Ajusta esto a la posición que prefieras */
-  left: 100px; /* Ajusta esto a la posición que prefieras */
-  width: 1100px; /* Ajusta esto al ancho que prefieras */
+
+
+  top: 350px;
+  /* Ajusta esto a la posición que prefieras */
+  left: 100px;
+  /* Ajusta esto a la posición que prefieras */
+  width: 1100px;
+  /* Ajusta esto al ancho que prefieras */
   height: 1300px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute; /* z-index solo funciona en elementos posicionados */
-  z-index: 1; /* Ajusta esto al valor que necesites */
+  position: absolute;
+  /* z-index solo funciona en elementos posicionados */
+  z-index: 1;
+  /* Ajusta esto al valor que necesites */
 }
 
-.content-noticias-pricipal{
-  
-  top: 250px; /* Ajusta esto a la posición que prefieras */
-  left: 100px; /* Ajusta esto a la posición que prefieras */
-  width: 1300px; /* Ajusta esto al ancho que prefieras */
+.content-noticias-pricipal {
+
+  top: 250px;
+  /* Ajusta esto a la posición que prefieras */
+  left: 100px;
+  /* Ajusta esto a la posición que prefieras */
+  width: 1300px;
+  /* Ajusta esto al ancho que prefieras */
   height: 600px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
 }
 
-.content-radio{
+.content-radio {
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -209,7 +231,7 @@ p{
   align-items: center;
 }
 
-.content-video-principal{
+.content-video-principal {
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -217,7 +239,7 @@ p{
   align-items: center;
 }
 
-.content-redes{
+.content-redes {
   margin-top: 3000px;
   height: 60vh;
   display: flex;
@@ -226,7 +248,7 @@ p{
   align-items: center;
 }
 
-.content-izq{
+.content-izq {
   height: 98vh;
   display: flex;
   flex-direction: column;
@@ -234,7 +256,7 @@ p{
   align-items: left;
 }
 
-.content2{
+.content2 {
   height: 250vh;
   display: flex;
   flex-direction: column;
@@ -242,7 +264,7 @@ p{
   align-items: center;
 }
 
-.content-2-filas{
+.content-2-filas {
   height: 170vh;
   display: flex;
   flex-direction: column;
@@ -250,45 +272,17 @@ p{
   align-items: center;
 }
 
-.sau{
+.sau {
   padding: 50px;
   background: #ffff;
 }
 
-.sau-hoja{
+.sau-hoja {
   padding: 50px;
 
 }
 
-.box-container-servicios{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: flex-start;
-}
-.box-container .box{
-  
-  height: 355px;
-  width: 270px;
-  background: #fffefe00 ;/* #0076BD;*/
-  
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-  margin: 10px;
-}
-
-.box-container-servicios .box{
-  
-  height: 355px;
-  width: 270px;
-  background: #fffefe00 ;/* #0076BD;*/
-  
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-  margin: 10px;
-}
-
-
-.box-container{
+.box-container-servicios {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -296,17 +290,49 @@ p{
   align-items: flex-start;
 }
 
-.box-container .box p{
+.box-container .box {
+
+  height: 355px;
+  width: 270px;
+  background: #fffefe00;
+  /* #0076BD;*/
+
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  margin: 10px;
+}
+
+.box-container-servicios .box {
+
+  height: 355px;
+  width: 270px;
+  background: #fffefe00;
+  /* #0076BD;*/
+
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  margin: 10px;
+}
+
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.box-container .box p {
   margin-top: 10px;
   margin-right: 5px;
   padding: 0 12px;
   text-align: justify;
   font-size: 20px;
-  color: black; 
+  color: black;
 }
-.box-container .box h3{
+
+.box-container .box h3 {
   font-size: 20px;
-  color: #ffdd00; 
+  color: #ffdd00;
 }
 
 
@@ -321,8 +347,10 @@ p{
 
 .price {
   position: relative;
-  height: 630px; /* Ajusta esto a la altura que prefieras */
-  width: 1325px; /* Ajusta esto al ancho que prefieras */
+  height: 630px;
+  /* Ajusta esto a la altura que prefieras */
+  width: 1325px;
+  /* Ajusta esto al ancho que prefieras */
   text-align: left;
 }
 
@@ -346,13 +374,29 @@ p{
 }
 
 @keyframes carrusel {
-  0% { opacity: 0; }
-  8% { opacity: 1; }
-  33% { opacity: 1; }
-  41% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  41% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.desplazar-izq, .desplazar-der {
+
+.desplazar-izq,
+.desplazar-der {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -372,16 +416,18 @@ p{
 
 
 .abaut {
-  background:  #ffff;
+  background: #ffff;
   padding: 50px 0;
 }
-.box-container2{
+
+.box-container2 {
   display: flex;
   justify-content: center;
   padding-top: 50px;
   flex-wrap: wrap;
 }
-.box-container2 .box{
+
+.box-container2 .box {
   width: 250px;
   padding-bottom: 20px;
   text-align: center;
@@ -389,46 +435,51 @@ p{
   background: #171717;
   margin: 20px 20px;
 }
-.box-container2 .box img{
+
+.box-container2 .box img {
   height: 70px;
   width: 70px;
   object-fit: cover;
   border-radius: 50%;
   margin-top: -50px;
-   border: 6px #32bcd8;
+  border: 6px #32bcd8;
 }
 
-.box-container2 .box h3{
+.box-container2 .box h3 {
   font-size: 10px;
   color: #4203b7;
   padding-top: 10px;
 }
 
-.box-container2 .box p{
+.box-container2 .box p {
   font-size: 18px;
   color: #fff;
   padding: 0;
 }
-.box-container2 .box .stars i{
+
+.box-container2 .box .stars i {
   font-size: 15px;
   color: #e91e63;
 }
 
-.contact{
+.contact {
   padding: 20px 0;
   background: #084771;
   ;
 }
-.footer-section{
+
+.footer-section {
   display: flex;
 
 }
-.f-enlaces{
+
+.f-enlaces {
   display: flex;
   flex-direction: column;
   margin: 0 100px;
 }
-.f-enlaces a{
+
+.f-enlaces a {
   color: #fff;
   text-decoration: none;
   margin-top: 20px;
@@ -449,6 +500,7 @@ p{
   margin: 10px;
   text-align: center;
 }
+
 .item img {
   max-width: 50%;
   height: auto;
@@ -457,163 +509,183 @@ p{
 .containerN {
   display: flex;
   align-items: center;
-  
+
 }
 
-.columnN, .columnN p, .columnN h2{
+.columnN,
+.columnN p,
+.columnN h2 {
   flex: 1;
   padding: 30px;
   background-color: rgba(248, 245, 245, 0.4);
   font-size: 18px;
   color: #0b0b0a;
-  
+
 
 }
 
 
-.containe{
+.containe {
   max-width: 1200px;
   margin: 0 auto;
 }
-.header{
+
+.header {
   display: flex;
   align-items: center;
-  min-height: 50vb; 
-     
+  min-height: 50vb;
+
 }
 
-.swiper-slide{
+.swiper-slide {
   padding: 50px 80px 50px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper-button-prev::after{
+
+.swiper-button-prev::after {
   font-size: 25px;
 }
-.swiper-button-next::after{
+
+.swiper-button-next::after {
   font-size: 25px;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
   color: #61647b;
 }
-.swiper-button-next{
+
+.swiper-button-next {
   color: #61647b;
 }
 
 
-.header-info{
+.header-info {
   display: flex;
 }
 
-.header-img{
+.header-img {
   width: 50%;
   text-align: center;
 }
-.header-img img{
+
+.header-img img {
   width: 1000px;
 }
+
 /* RADIO*/
 
-.boxR-container{
+.boxR-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.boxR-container .boxR{
+.boxR-container .boxR {
   height: 500px;
   width: 550px;
-  background:  #0076BD;
+  background: #0076BD;
   text-align: center;
   border-radius: 0px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
   margin: 10px;
 }
 
-.boxL-container{
+.boxL-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.boxL-container .boxR{
+.boxL-container .boxR {
   height: 300px;
   width: 900px;
-  background:  #0076BD;
+  background: #0076BD;
   text-align: center;
   border-radius: 0px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
   margin: 10px;
 }
 
-.boxLxL-container{
+.boxLxL-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.boxLxL-container .boxR{
+.boxLxL-container .boxR {
   height: 600px;
   width: 900px;
-  background:  #0076BD;
+  background: #0076BD;
   text-align: center;
   border-radius: 0px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
   margin: 10px;
 }
 
-@media(max-width:750px){
-  p{
-      padding: 0 50px;
+@media(max-width:750px) {
+  p {
+    padding: 0 50px;
   }
-.title{
+
+  .title {
     margin-bottom: 0px;
-    font-size: 40px; 
+    font-size: 40px;
   }
-.sau{
+
+  .sau {
     height: 80px;
     padding: 50px 0;
   }
-.abaut{
+
+  .abaut {
     height: 100px;
     padding: 50px 0;
   }
-.footer-section{
+
+  .footer-section {
     display: flex;
     flex-direction: column;
   }
-.f-enlaces{
+
+  .f-enlaces {
     display: none;
   }
-.navbar{
+
+  .navbar {
     display: none;
   }
-  
-.mySwiper-1{
-  width: 100px;
-}
-.swiper-slide{
-  padding: 0 30px 50px 30px;
-}
-.header-info{
-  padding: 0;
-  flex-direction: column;
-  text-align: center;
-}
-.header-img{
-  width: 100px;
-}
-.header-img img{
-  width: 100px;
-}
+
+  .mySwiper-1 {
+    width: 100px;
+  }
+
+  .swiper-slide {
+    padding: 0 30px 50px 30px;
+  }
+
+  .header-info {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-img {
+    width: 100px;
+  }
+
+  .header-img img {
+    width: 100px;
+  }
 
 
-  
+
 }
+
 .buttons-container {
   display: flex;
   justify-content: center;
@@ -638,84 +710,288 @@ p{
   background-color: #0056b3;
 }
 
-  /*ESTOS SON PARA LOS ACCESOS RAPIDOS DE LA PAGINA PRINCIPAL*/
+/*ESTOS SON PARA LOS ACCESOS RAPIDOS DE LA PAGINA PRINCIPAL*/
 
-  .banner-accesos-rapidos {
-    display: flex;
-    justify-content: space-around;
-    /*background: url("/Images/pagina principal/fondo_azul.jpg") no-repeat center;*/
-    background-color:  #084771;
-    background-size: cover;
-    padding: 20px;
-  }
+.banner-accesos-rapidos {
+  display: flex;
+  justify-content: space-around;
+  /*background: url("/Images/pagina principal/fondo_azul.jpg") no-repeat center;*/
+  background-color: #084771;
+  background-size: cover;
+  padding: 20px;
   
-  .modulo-accesos-rapidos {
-    text-align: center;
-  }
+}
+
+.modulo-accesos-rapidos {
+  text-align: center;
+}
+
+.modulo-accesos-rapidos img {
+  width: 100px;
+  /* Ajusta esto al tamaño que prefieras */
+  height: 100px;
+  /* Ajusta esto al tamaño que prefieras */
+}
+
+.modulo-accesos-rapidos p {
+  margin-top: 10px;
+}
+
+.banner-informes-gestion {
+  display: flex;
+  justify-content: space-around;
+  /*background: url("/Images/pagina principal/fondo_azul.jpg") no-repeat center;*/
+  background-color: rgba(8, 71, 113, 0.5);
+  background-size: cover;
+  padding: 20px;
+  height: auto;
+  width: 100pw;
+}
+
+.modulo-informes-gestion {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.modulo-informes-gestion2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modulo-informes-gestion img {
+  width: 100px;
+  /* Ajusta esto al tamaño que prefieras */
+  height: 100px;
+  /* Ajusta esto al tamaño que prefieras */
+}
+
+.modulo-informes-gestion p {
+  margin-top: 10px;
+}
+
+/*imagen fondo*/
+.img-fondo-secundarias {
+  position: relative;
+}
+
+.img-fondo-secundarias img {
+  width: 100%;
+  /* Ajusta esto al ancho que prefieras */
+  height: 45%;
+  /* Ajusta esto a la altura que prefieras */
+  object-fit: cover;
+  /* La imagen se redimensionará para cubrir tanto el ancho como la altura del contenedor, manteniendo sus proporciones */
+}
+
+.hoja {
+  position: absolute;
+  /* Esto posiciona el recuadro en relación al contenedor .img-fondo-secundarias */
+  top: 250px;
+  /* Ajusta esto a la posición que prefieras */
+  left: 100px;
+  /* Ajusta esto a la posición que prefieras */
+  width: 1100px;
+  /* Ajusta esto al ancho que prefieras */
+  height: 2000px;
+  /* Ajusta esto a la altura que prefieras */
+  background-color: rgb(255, 255, 255);
+  /* Esto crea un fondo blanco semi-transparente */
+  overflow-y: visible;
+  /* Esto permite el desplazamiento vertical si el contenido supera la altura del recuadro */
+  padding: 10px;
+}
+
+/*INDICE*/
+.indice {
+  position: fixed absolute;
+  /* Esto hace que la barra de índice se mantenga en su lugar incluso cuando se desplaza la página */
+  left: 0;
+  top: 0;
+  width: 200px;
+  /* Ajusta esto al ancho que prefieras */
+  height: 100%;
+  background-color: #f8f8f8;
+  /* Ajusta esto al color que prefieras */
+  padding: 20px;
+  text-align: left;
+  overflow-y: auto;
+  /* Esto permite el desplazamiento vertical si el índice es más largo que la altura de la ventana */
   
-  .modulo-accesos-rapidos img {
-    width: 100px; /* Ajusta esto al tamaño que prefieras */
-    height: 100px; /* Ajusta esto al tamaño que prefieras */
-  }
+}
+
+.indice ul {
+  list-style-type: none;
+  /* Esto elimina los puntos de la lista */
+  padding: 5;
   
-  .modulo-accesos-rapidos p {
-    margin-top: 10px;
-  }
-
-
-  /*imagen fondo*/
-  .img-fondo-secundarias {
-    position: relative;
-  }
-  .img-fondo-secundarias img{
-    width: 100%; /* Ajusta esto al ancho que prefieras */
-    height: 45%; /* Ajusta esto a la altura que prefieras */
-    object-fit: cover; /* La imagen se redimensionará para cubrir tanto el ancho como la altura del contenedor, manteniendo sus proporciones */
-  }
-
-  .hoja {
-    position: absolute; /* Esto posiciona el recuadro en relación al contenedor .img-fondo-secundarias */
-    top: 250px; /* Ajusta esto a la posición que prefieras */
-    left: 100px; /* Ajusta esto a la posición que prefieras */
-    width: 1100px; /* Ajusta esto al ancho que prefieras */
-    height: 2000px; /* Ajusta esto a la altura que prefieras */
-    background-color: rgb(255, 255, 255); /* Esto crea un fondo blanco semi-transparente */
-    overflow-y: auto; /* Esto permite el desplazamiento vertical si el contenido supera la altura del recuadro */
-    padding: 10px;
-  }
-
-  /*INDICE*/
-  .indice {
-    position: fixed absolute; /* Esto hace que la barra de índice se mantenga en su lugar incluso cuando se desplaza la página */
-    left: 0;
-    top: 0;
-    width: 200px; /* Ajusta esto al ancho que prefieras */
-    height: 100%;
-    background-color: #f8f8f8; /* Ajusta esto al color que prefieras */
-    padding: 20px;
-    text-align: left;
-    overflow-y: auto; /* Esto permite el desplazamiento vertical si el índice es más largo que la altura de la ventana */
-  }
   
-  .indice ul {
-    list-style-type: none; /* Esto elimina los puntos de la lista */
-    padding: 0;
-  }
+}
+
+.indice li a {
+  text-decoration: underline;
+  /* Esto elimina el subrayado de los enlaces */
+  color: #000000;
+  /* Ajusta esto al color que prefieras */
   
-  .indice li a {
-    text-decoration: none; /* Esto elimina el subrayado de los enlaces */
-    color: #000000; /* Ajusta esto al color que prefieras */
-  }
+}
+h1[id], h2[id] {
+  /* Aplica un margen superior de 50px al desplazarse */
+  scroll-margin-top: 100px;
+}
 
-  .contenido-interno {
-    position: absolute;
-    left: 0;
-    top: 900px;
-    margin-left: 220px; /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
-    padding: 20px;
-  }
+.contenido-interno {
+  position: absolute;
+  left: 0;
+  top: 900px;
+  margin-left: 220px;
+  /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
+  padding: 20px;
 
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  /*font-weight: normal;*/
   
+  text-align: justify;
+  align-items: left;
+  margin-right: 25px;
+}
+
+.contenido-interno p{
+  position: absolute;
+  left: 0;
+  margin-left: 0px;
+  /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
+  padding: 0px;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  /*font-weight: normal;*/
+  color: #000000;
+  text-align: justify;
+  align-items: left;
+  margin-right: 0px;
+}
+.contenido-interno-informes-gestion {
+  position: absolute;
+  left: 0;
+  top: 620px;
+  margin-left: 220px;
+  /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
+  padding: 20px;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  /*font-weight: normal;*/
+  
+  text-align: justify;
+  align-items: left;
+  margin-right: 25px;
+}
+
+.contenido-interno-informes-gestion p{
+  position: absolute;
+  left: 0;
+  margin-left: 0px;
+  /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
+  padding: 0px;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  /*font-weight: normal;*/
+  color: #000000;
+  text-align: justify;
+  align-items: left;
+  margin-right: 0px;
+}
 
 
 
+/* escudo*/
+.escudo-menu {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 65px;
+  height: 65px;
+}
+
+
+
+/* Titulos subtitulos segun el manual */
+.textos-todos-titulo-principal{
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  text-align: center;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.textos-todos h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.textos-todos p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  /*font-weight: normal;*/
+  position: relative;
+  text-align: justify;
+  align-items: left;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+
+/* Estilo para el contenedor del menú */
+.menu-desplegable {
+  width: 800px;
+  margin-left: 35px;
+  background-color: #8081831c;
+}
+
+/* Estilo para las opciones del menú */
+.menu-desplegable .opcion {
+  /*background-color: #AD9218;*/
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para las subopciones del menú */
+.menu-desplegable .opcion .subopcion {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+  
+  
+}
+
+/* Estilo para las subopciones cuando el menú está abierto */
+.menu-desplegable .opcion.open .subopcion {
+  display: block;
+  
+}
+.menu-desplegable .opcion .subopcion .subsubopcion {
+  display: none;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+/* Estilo para las subsubopciones cuando el menú está abierto */
+.menu-desplegable .opcion .subopcion.open .subsubopcion {
+  display: block;
+}
