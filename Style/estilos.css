@@ -162,6 +162,15 @@ body {
   color: #0b0b0a;
 }
 
+.subsubtitle {
+  margin-bottom: 20px;
+  font-size: 25px;
+  
+  /*font-weight: 300;*/
+  
+  color: #0b0b0a;
+}
+
 
 
 p {
@@ -850,7 +859,7 @@ p {
   display: flex;
   justify-content: space-around;
   /*background: url("/Images/pagina principal/fondo_azul.jpg") no-repeat center;*/
-  background-color: rgba(8, 71, 113, 0.5);
+  background-color: #6c757d10;
   background-size: cover;
   padding: 20px;
   height: auto;
@@ -930,6 +939,24 @@ p {
   padding: 10px;
 }
 
+.hoja-instituto-amazonico {
+  position: absolute;
+  /* Esto posiciona el recuadro en relación al contenedor .img-fondo-secundarias */
+  top: 250px;
+  /* Ajusta esto a la posición que prefieras */
+  left: 100px;
+  /* Ajusta esto a la posición que prefieras */
+  width: 1100px;
+  /* Ajusta esto al ancho que prefieras */
+  height: 7000px;
+  /* Ajusta esto a la altura que prefieras */
+  background-color: rgb(255, 255, 255);
+  /* Esto crea un fondo blanco semi-transparente */
+  overflow-y: visible;
+  /* Esto permite el desplazamiento vertical si el contenido supera la altura del recuadro */
+  padding: 10px;
+}
+
 /*INDICE*/
 .indice {
   position: fixed absolute;
@@ -938,7 +965,7 @@ p {
   top: 0;
   width: 200px;
   /* Ajusta esto al ancho que prefieras */
-  height: 100%;
+  height: 1000px;
   background-color: #f8f8f8;
   /* Ajusta esto al color que prefieras */
   padding: 20px;
@@ -972,7 +999,8 @@ h1[id], h2[id], h3[id] {
 .contenido-interno {
   position: absolute;
   left: 0;
-  top: 900px;
+  top: 475px;
+  
   margin-left: 220px;
   /* Ajusta esto al ancho de tu barra de índice más un pequeño margen */
   padding: 20px;
@@ -1034,6 +1062,7 @@ h1[id], h2[id], h3[id] {
   margin-right: 0px;
 }
 
+/*amazonico*************************************/
 
 
 /* escudo*/
@@ -1135,7 +1164,7 @@ h1[id], h2[id], h3[id] {
 
 /* Estilo para las opciones del menú */
 .menu-desplegable-contactos .opcion {
-  background-color: #54AEE2;
+  background-color: #6c757d7b;
   margin: 0px;
   padding: 10px;
   cursor: pointer;
@@ -1163,5 +1192,49 @@ h1[id], h2[id], h3[id] {
 
 /* Estilo para las subsubopciones cuando el menú está abierto */
 .menu-desplegable-contactos .opcion .subopcion.open .subsubopcion {
+  display: block;
+}
+
+
+
+
+/*menu desplegable amazonicos********************************************************/
+/* Estilo para el contenedor del menú */
+.menu-desplegable-amazonicos {
+  width: 800px;
+  margin-left: 35px;
+  /*background-color: #8081831c;*/
+}
+
+/* Estilo para las opciones del menú */
+.menu-desplegable-amazonicos .opcion {
+  /*background-color: #AD9218;*/
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para las subopciones del menú */
+.menu-desplegable-amazonicos .opcion .subopcion {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+  
+  
+}
+
+/* Estilo para las subopciones cuando el menú está abierto */
+.menu-desplegable-amazonicos .opcion.open .subopcion {
+  display: block;
+  
+}
+.menu-desplegable-amazonicos .opcion .subopcion .subsubopcion {
+  display: none;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+/* Estilo para las subsubopciones cuando el menú está abierto */
+.menu-desplegable-amazonicos .opcion .subopcion.open .subsubopcion {
   display: block;
 }
