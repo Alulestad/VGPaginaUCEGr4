@@ -153,6 +153,17 @@ body {
   color: #0b0b0a;
 }
 
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 25px;
+  
+  /*font-weight: 300;*/
+  text-transform: uppercase;
+  color: #0b0b0a;
+}
+
+
+
 p {
   margin-bottom: 40px;
   font-size: 15px;
@@ -223,22 +234,7 @@ p {
 
 }
 
-.content-contactos-modulos {
 
-  top: auto;
-  /* Ajusta esto a la posición que prefieras */
-  left: auto;
-  /* Ajusta esto a la posición que prefieras */
-  width: 1200px;
-  /* Ajusta esto al ancho que prefieras */
-  height: 600px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .content-radio {
   height: 25vh;
@@ -388,6 +384,60 @@ p {
   
 }
 
+/* contactos */
+.content-contactos-modulos {
+
+  top: auto;
+  /* Ajusta esto a la posición que prefieras */
+  left: auto;
+  /* Ajusta esto a la posición que prefieras */
+  width: 1200px;
+  /* Ajusta esto al ancho que prefieras */
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box-container-contactos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: flex-start;
+  
+}
+
+.box-container-contactos .box {
+
+  height: auto;
+  width: 270px;
+  background: #fffefe00;
+  /* #0076BD;*/
+
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  margin: 10px;
+}
+
+
+
+.box-container-contactos .box p {
+  margin-top: 10px;
+  margin-right: 30px;
+  padding: 0 0px;
+  text-align: justify;
+  font-size: 20px;
+  color: black;
+}
+
+.box-container-contactos .box h3 {
+  font-size: 20px;
+  color: #ffdd00;
+  
+}
 
 
 /*
@@ -696,6 +746,11 @@ p {
     padding: 50px 0;
   }
 
+  .sau2 {
+    height: 80px;
+    padding: 0px 0;
+  }
+
   .abaut {
     height: 100px;
     padding: 50px 0;
@@ -857,6 +912,24 @@ p {
   padding: 10px;
 }
 
+.hoja-instituto {
+  position: absolute;
+  /* Esto posiciona el recuadro en relación al contenedor .img-fondo-secundarias */
+  top: 250px;
+  /* Ajusta esto a la posición que prefieras */
+  left: 100px;
+  /* Ajusta esto a la posición que prefieras */
+  width: 1100px;
+  /* Ajusta esto al ancho que prefieras */
+  height: 3000px;
+  /* Ajusta esto a la altura que prefieras */
+  background-color: rgb(255, 255, 255);
+  /* Esto crea un fondo blanco semi-transparente */
+  overflow-y: visible;
+  /* Esto permite el desplazamiento vertical si el contenido supera la altura del recuadro */
+  padding: 10px;
+}
+
 /*INDICE*/
 .indice {
   position: fixed absolute;
@@ -891,7 +964,7 @@ p {
   /* Ajusta esto al color que prefieras */
   
 }
-h1[id], h2[id] {
+h1[id], h2[id], h3[id] {
   /* Aplica un margen superior de 50px al desplazarse */
   scroll-margin-top: 100px;
 }
@@ -1048,5 +1121,47 @@ h1[id], h2[id] {
 
 /* Estilo para las subsubopciones cuando el menú está abierto */
 .menu-desplegable .opcion .subopcion.open .subsubopcion {
+  display: block;
+}
+
+/********* menu desplegable contactos ********/
+/* Estilo para el contenedor del menú */
+.menu-desplegable-contactos {
+  width: auto;
+  
+  margin-left: 0px;
+  background-color: #8081831c;
+}
+
+/* Estilo para las opciones del menú */
+.menu-desplegable-contactos .opcion {
+  background-color: #54AEE2;
+  margin: 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para las subopciones del menú */
+.menu-desplegable-contactos .opcion .subopcion {
+  display: none;
+  margin-top: 10px;
+  padding-left: 0px;
+  
+  
+}
+
+/* Estilo para las subopciones cuando el menú está abierto */
+.menu-desplegable-contactos .opcion.open .subopcion {
+  display: block;
+  
+}
+.menu-desplegable-contactos .opcion .subopcion .subsubopcion {
+  display: none;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+/* Estilo para las subsubopciones cuando el menú está abierto */
+.menu-desplegable-contactos .opcion .subopcion.open .subsubopcion {
   display: block;
 }

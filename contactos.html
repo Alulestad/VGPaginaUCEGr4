@@ -9,6 +9,34 @@
   <link rel="stylesheet" href="Style/estilos.css">
   <title>www.uce.edu.ec/</title>
 
+  <style>
+    .module-contactos {
+      width: 50%;
+      text-align: center;
+    }
+
+    .module-contactos img {
+      width: 50%;
+    }
+
+    .banner-contactos {
+      width: 50%;
+      height: 50px;
+      overflow: hidden;
+      transition: height 0.5s;
+    }
+
+    .banner-contactos img {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .module-contactos {
+        width: 100%;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -239,7 +267,7 @@
     <div class="textos-todos">
 
       <div class="textos-todos-titulo-principal" style="margin-left: 130px;">
-         Contactos
+        Contactos
       </div>>
 
       <div class="hoja">
@@ -247,7 +275,7 @@
         <img src="/images/contactos/mapa_uce.png" style="height: auto ; ">
 
         <div class="indice">
-          <img src="/images/icono_indice.png" alt="" style="height: 100px; width: 100px; margin-bottom: 20px;" >
+          <img src="/images/icono_indice.png" alt="" style="height: 100px; width: 100px; margin-bottom: 20px;">
           <div>ÍNDICE</div>
           <ul>
             <li><a href="#subtitulo1">-Campus</a></li>
@@ -255,8 +283,8 @@
             <li><a href="#titulo2">-Guía telefónica</a></li>
             <!--li><a href="#subtitulo2">Subtítulo 2</a></li-->
             <!--li><a href="#titulo3">-Museos universitarios</a></li-->
-            
-            
+
+
             <!-- Agrega más títulos y subtítulos según sea necesario -->
           </ul>
         </div>
@@ -264,48 +292,176 @@
         <div class="contenido-interno" style=" top: 490px;">
           <!-- Tu contenido aquí -->
 
-          
-          <section class=".content-contactos-modulos sau">
-            <h2 class="title" id="subtitulo1" style="font-family: 'Helvetica Neue', sans-serif; text-align: center;">Campus</h2>
-        
-            <div class="box-container-servicios">
+
+          <section class=".content-contactos-modulos sau2">
+            <h2 class="title" id="subtitulo1" style="font-family: 'Helvetica Neue', sans-serif; text-align: center;">
+              Campus</h2>
+
+            <div class="box-container-contactos">
               <div class="box">
-                <img src="/images/noti01.jpg" alt="" width="270" height="150">
+                <img src="/images/contactos/campus_central_redimen.jpg" alt="" width="270" height="150">
                 <i>
-                  <p> Mejorar la gestión de suelo y agua abre discusión entre academia y sector agrícola </p>
+                  <h2>CAMPUS CENTRAL</h2> 
+                  <p> 
+                    Tel:  (593 2) 398 1000 ext. 189
+                    <br>
+                    Email: ucentralecuador@uce.edu.ec
+                    <br>
+                    Dirección: Av. Universitaria y Av. América </p>
+
+                  <!-- Menu desplegable-->
+                  <div class="menu-desplegable-contactos">
+                    <div class="opcion" onclick="this.classList.toggle('open')">
+                      Mapa
+                      <div class="subopcion">
+                        <img src="/images/contactos/mapa_uce_c_central.png" alt="" width="270" height="150">
+                      </div>
+                      
+                      <!-- Agrega más subopciones según sea necesario -->
+                    </div>
+                    
+                    <!-- Agrega más opciones según sea necesario -->
+                  </div>
                 </i>
               </div>
-        
+
               <div class="box">
-                <img src="/images/noti02.jpg" alt="" width="270" height="150">
-                <i class="fab_noticia2">
-                  <p> Semana de conferencias en la FIQ por su décimo cuarto aniversario </p>
+                <img src="/images/contactos/campus_dorado.jpg" alt="" width="270" height="150">
+                <i>
+                  <h2>CAMPUS DORADO</h2> 
+                  <p> 
+                    Tel:  (593 2) 398 1000 ext. 189
+                    <br>
+                    Email: ucentralecuador@uce.edu.ec
+                    <br>
+                    Dirección: Av. Gran Colombia y Luis Sodiro</p>
+
+                  <!-- Menu desplegable-->
+                  <div class="menu-desplegable-contactos">
+                    <div class="opcion" onclick="this.classList.toggle('open')">
+                      Mapa
+                      <div class="subopcion">
+                        <img src="/images/contactos/mapa_uce_c_dorado.png" alt="" width="270" height="150">
+                      </div>
+                      
+                      <!-- Agrega más subopciones según sea necesario -->
+                    </div>
+                    
+                    <!-- Agrega más opciones según sea necesario -->
+                  </div>
                 </i>
               </div>
-        
+
               <div class="box">
-                <img src="/images/noti03.jpg" alt="" width="270" height="150">
-                <i class="fab_noticia3">
-                  <p> Nueva infraestructura para la Facultad de Ingeniería Química en su aniversario </p>
+                <img src="/images/contactos/campus_tumbaco_redimen.jpg" alt="" width="270" height="150">
+                <i>
+                  <h2>CAMPUS TUMBACO</h2> 
+                  <p> 
+                    Tel:  (593 2) 398 1000 ext. 189
+                    <br>
+                    Email: ucentralecuador@uce.edu.ec
+                    <br>
+                    Dirección: Av. Oswaldo Guayasamin y Ruta Viva 
+                    <br>
+                    .
+                  </p>
+
+                  <!-- Menu desplegable-->
+                  <div class="menu-desplegable-contactos">
+                    <div class="opcion" onclick="this.classList.toggle('open')">
+                      Mapa
+                      <div class="subopcion">
+                        <img src="/images/contactos/mapa_uce_c_tumbaco.png" alt="" width="270" height="150">
+                      </div>
+                      
+                      <!-- Agrega más subopciones según sea necesario -->
+                    </div>
+                    
+                    <!-- Agrega más opciones según sea necesario -->
+                  </div>
                 </i>
               </div>
-        
+
               <div class="box">
-                <img src="/images/noti04.jpg" alt="" width="270" height="150">
-                <i class="fab_noticia4">
-                  <p> "Todos En Tándem": festival inclusivo de la UCE a través del ciclismo </p>
+                <img src="/images/contactos/campus_salcedo_redimen.jpg" alt="" width="270" height="150">
+                <i>
+                  <h2>CAMPUS SALCEDO</h2> 
+                  <p> 
+                    Tel:  (593 2) 398 1000 ext. 189
+                    <br>
+                    Email: ucentralecuador@uce.edu.ec
+                    <br>
+                    Dirección: Salcedo, Rumipamba. Carr. Panamericana  </p>
+
+                  <!-- Menu desplegable-->
+                  <div class="menu-desplegable-contactos">
+                    <div class="opcion" onclick="this.classList.toggle('open')">
+                      Mapa
+                      <div class="subopcion">
+                        <img src="/images/contactos/mapa_uce_c_salcedo.png" alt="" width="270" height="150">
+                      </div>
+                      
+                      <!-- Agrega más subopciones según sea necesario -->
+                    </div>
+                    
+                    <!-- Agrega más opciones según sea necesario -->
+                  </div>
                 </i>
               </div>
-        
+              <div class="box">
+                <img src="/images/contactos/campus_uyumbicho_redimen.png" alt="" width="270" height="150">
+                <i>
+                  <h2>CAMPUS UYUMBICHO</h2> 
+                  <p> 
+                    Tel:  (593 2) 398 1000 ext. 189
+                    <br>
+                    Email: ucentralecuador@uce.edu.ec
+                    <br>
+                    Dirección: Tambillo, Uyumbicho, Troncal de la Sierra </p>
+
+                  <!-- Menu desplegable-->
+                  <div class="menu-desplegable-contactos">
+                    <div class="opcion" onclick="this.classList.toggle('open')">
+                      Mapa
+                      <div class="subopcion">
+                        <img src="/images/contactos/mapa_uce_c_uyumbicho.png" alt="" width="270" height="150">
+                      </div>
+                      
+                      <!-- Agrega más subopciones según sea necesario -->
+                    </div>
+                    
+                    <!-- Agrega más opciones según sea necesario -->
+                  </div>
+                </i>
+              </div>
+
             </div>
           </section>
+
+
           
+
+<br>
 
           <h2 id="titulo2" class="title">Guía telefónica</h2>
 
-          
-          
-<!--hasdafsadf
+
+          <div class="box-container-contactos">
+
+            <div class="box">
+              <a href="https://issuu.com/webmaster_uce/docs/directorio_telefonico_uce_2015">
+                <img src="/images/contactos/guia_telefonica_redimen.jpg" alt="" width="270" height="150">
+            </a>
+            
+              <i>
+                <h2>GUÍA TELEFÓNICA</h2> 
+                <p> 
+                  
+                </p>
+            </div>
+          </div>
+
+          <!--hasdafsadf
 asd
 fsd
 f
@@ -316,7 +472,7 @@ Litetal_o_Responsable_de_atender_la_informaci%C3%B3n_p%C3%BAblicasd
 
 
 
-         
+
 
 
 
@@ -344,7 +500,7 @@ Litetal_o_Responsable_de_atender_la_informaci%C3%B3n_p%C3%BAblicasd
 
   <!--/section-->
 
-
+  
 
 
   <!--<section class="content abaut">
@@ -429,6 +585,23 @@ Litetal_o_Responsable_de_atender_la_informaci%C3%B3n_p%C3%BAblicasd
 
 
   </map>
+
+
+  <!--
+    scripts
+  -->
+  <script>
+    var banners = document.getElementsByClassName('banner-contactos');
+    for (var i = 0; i < banners.length; i++) {
+      banners[i].addEventListener('click', function () {
+        if (this.style.height === '50px') {
+          this.style.height = '200px';
+        } else {
+          this.style.height = '50px';
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
