@@ -207,7 +207,7 @@ table {
 
 caption {
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 2rem;
   color: #6c757d;
   text-align: left;
   caption-side: bottom;
@@ -488,7 +488,7 @@ mark,
 }
 
 .list-unstyled {
-  padding-left: 0;
+  padding-left: 50;
   list-style: none;
 }
 
