@@ -33,7 +33,7 @@
 
 
 
-
+<link rel="stylesheet" href="Style/estilos_especificos.css">
 
 
   <style>
@@ -49,222 +49,24 @@
 </head>
 
 <body>
-  <div class="head" style="margin-top: -40px;">
+    <!--****************************************************************************************-->
+  <!--******************************************Menu******************************************-->
+  
+  
+  <div id="nav-placeholder" style="margin-top: -40px;"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("menu.html");
+    });
+  </script>
+  <p>
+  </p>
+  <h1 class="text-white mb-3">.</h>
 
-    <div class="logo" >
-      <img src="/images/escudo.png" alt="" width="65" height="65" usemap="#mapa" class="escudo-menu">
+  <!--******************************************Menu******************************************-->
+  <!--****************************************************************************************-->
 
-    </div>
-
-    <div class="navbar">
-      <!--a href="http://127.0.0.1:5500/principal.html">Inicio</a-->
-      <div class="dropdown">
-        <button class="dropbtn"><a href="Principal.html" style="margin-top: -14px;">Inicio</a>
-        </button>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Académicos<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" >
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="NIVELACION_2.html">NIVELACIÓN</a></h3>
-            <a href="NIVELACION_2.html">Nivelación</a>
-            <a href="NIVELACION_2.html">Admisión</a>
-          </div>
-          <div class="column">
-            <h3><a href="IDIOMAS_2.html">Idiomas</a></h3>
-            <a href="Ingles.html">Inglés</a>
-            <a href="FRANCES.html">Francés</a>
-            <a href="Italiano.html">Italiano</a>
-            <a href="COREANO.html">Coreano</a>
-            <a href="PORTUGUES.html">Portugues</a>
-            <a href="KICHWA.html">Kichua</a>
-          </div>
-          <div class="column">
-            <h3><a href="SUFICIENCIAS_2.html">Suficiencia informática</a></h3>
-            <a href="SUFICIENCIAS_2.html">Coordinador</a>
-            <a href="SUFICIENCIAS_2.html">Docentes</a>
-          </div>
-          <div class="column">
-            <h3><a href="SUFICIENCIAS_2.html">Suficiencia en cultura física</a></h3>
-            <a href="SUFICIENCIAS_2.html">Coordinador</a>
-            <a href="SUFICIENCIAS_2.html">Docentes</a>
-          </div>
-          <div class="column">
-            <h3><a href="VinculacionConLaSociedad_2.html">Vinculación con la sociedad</a></h3>
-            <a href="VinculacionConLaSociedad_2.html">Dirección de vinculación</a>
-            <a href="VinculacionConLaSociedad_2.html">Normativas y convenios</a>
-            <a href="VinculacionConLaSociedad_2.html">Lista de programas</a>
-            <a href="VinculacionConLaSociedad_2.html">Calendarios informáticos</a>
-          </div>
-          <div class="column">
-            <br>
-            <h3><a href="PRACTICAS_2.html">Prácticas preprofesionales</a></h3>
-            <a href="PRACTICAS_2.html">Normativas y Convenios</a>
-            <a href="PRACTICAS_2.html">Lista de Programas</a>
-          </div>
-          <div class="column">
-            <h3><a href="TITULACION_2.html">Titulación</a></h3>
-            <a href="TITULACION_2.html">Informacion</a>
-            <a href="TITULACION_2.html">Inicio y Registros</a>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Investigación<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="Dirección_Investigacion.html">Dirección de investigación</a></h3>
-            <a href="Unidad_Administrativa.html">Unidad administrativa financiera</a>
-            <a href="Unidad_INVESTIGACION.html">Unidad de investigación formativa</a>
-
-          </div>
-          <div class="column">
-            <h3><a href="direccion de doctorado.html">Dirección de doctorado e innovación</a></h3>
-            <a href="direccion de doctorado.html">Doctorado y maestría con énfasis en investigación</a>
-            <a href="direccion de doctorado.html">innovación y propiedad intelectual UCE</a>
-            <a href="direccion de doctorado.html">Seguimiento PhD devengamiento</a>
-          </div>
-          <div class="column">
-            <h3><a href="CentroDeCiencias.html">Centro de ciencias básicas</a></h3>
-            <a href="CentroDeCiencias.html">Biología</a>
-            <a href="CentroDeCiencias.html">Física</a>
-            <a href="CentroDeCiencias.html">Matematícas</a>
-            <a href="CentroDeCiencias.html">Química</a>
-          </div>
-          <div class="column">
-            <h3><a href="institutos_investigacion.html">Instituto de investigación</a></h3>
-            <a href="instituto_investigacion_biomedicina.html">Biomedicina</a>
-            <a href="Instituto_de_Estudios_Amazónicos_e_Insulares.html">Estudios amazónicos e insulares</a>
-            <a href="Instituto_de_Investigacion_en_etnociencias.html">Etnociencias</a>
-            <a href="Instituto_de_Excelencia_en_Transporte_Intermodal_y_Fluvial.html">Excelencia en transporte</a>
-            <a href="Instituto_de_Investigación_en_Igualdad_de_genero_y_derechos.html">Igualdad género y derecho</a>
-            <a href="Instituto_de_Investigación_en_Zoonosis.html">Zoonosis</a>
-            <a href="Programa_ARES.html">Ares</a>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Vida Estudiantil<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="CLUBES2.html">Clubes</a></h3>
-            <a href="CLUBES2.html">Andinismo</a>
-            <a href="CLUBES2.html">Ruyby</a>
-            <a href="CLUBES2.html"></a>
-          </div>
-          <div class="column">
-            <h3><a href="ORQUESTA_2.html">Orquesta de la UCE</a></h3>
-            
-
-          </div>
-          <div class="column">
-            <h3><a href="#!">Asociación</a></h3>
-            
-
-          </div>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Transparencia<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="transparencia2.html">Transparencia</a></h3>
-            <a href="transparencia2.html">Transparencia</a>
-            <a href="transparencia2.html">Base legal</a>
-            <a href="transparencia2.html">Auditorias</a>
-            <a href="transparencia2.html">Informes de gestión</a>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Administración<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="contactos.html">Contactos</a></h3>
-            <a href="contactos.html">Direcctorio telefónico</a>
-          </div>
-          
-         
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Facultades<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="23Facultades.html">Categorias</a></h3>
-            
-            
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Servicios<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="consultorio_juridico2.html">Consultorio Jurídico</a></h3>
-            <h3><a href="https://aka-cdn.uce.edu.ec/ares/tmp/Servicios_UCE/Especialidades_odontologicas.pdf">Especialidades odontológicas</a></h3>
-            <h3><a href="https://aka-cdn.uce.edu.ec/ares/tmp/Servicios_UCE/Guia_Laboratorio_Cl%C3%ADnico.pdf">Laboratorio Clínico</a></h3>
-            <h3><a href="graduados2.html">Graduados</a></h3>
-
-
-          </div>
-          <div class="column">
-          <h3><a href="email_2.html">Correo institucional</a></h3>
-          <h3><a href="informacion estudiantes2.html">Información estudiantes</a></h3>
-          <h3><a href="museo.html">Museo universitario</a></h3>
-           <h3><a href="museo.html">Sistema Integrado de Bibliotecas</a></h3>
-          </div>
-          <div class="column">
-            <h3><a href="https://encuestas.uce.edu.ec/">Ecuestas</a></h3>
-            <h3><a href="#">Hospital del día</a></h3>
-            <h3><a href="https://revistadigital.uce.edu.ec/">Revista digital</a></h3>
-            <h3> <a href="#">UCE en cifras</a></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">SIIU<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <!--div class="header"></div-->
-          <div class="column">
-            <h3><a href="https://siiu.uce.edu.ec/">SIIU</a></h3>
-            <a href="https://siiu.uce.edu.ec/">Ingresar</a>
-
-          </div>
-          
-        </div>
-      </div>
-
-
-    </div>
-  </div>
 <p>
 </p>
 <h1 class="text-white mb-3">.</h>
